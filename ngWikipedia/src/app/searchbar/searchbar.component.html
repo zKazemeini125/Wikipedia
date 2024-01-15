@@ -1,0 +1,4 @@
+<form (submit)="OnSubmit($event)">
+    <input type="text" (input)="OnChangeInput($any($event.target).value)">
+    {{term}}
+</form>
