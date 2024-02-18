@@ -6,7 +6,6 @@ import { Injectable } from "@angular/core";
 })
 export class WikipediaService {
   constructor(private http: HttpClient) {}
-
   onSearch(value: string) {
     return this.http.get("https://en.wikipedia.org/w/api.php", {
       params: {

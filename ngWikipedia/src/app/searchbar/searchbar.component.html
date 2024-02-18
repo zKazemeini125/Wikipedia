@@ -1,5 +1,8 @@
 <form class="form" (submit)="OnSubmit($event)">
-    <input class="input" type="text"
-        (input)="OnChangeInput($any($event.target).value)">
-    {{term}}
+    <div class="input-group mb-2">
+        <input type="text" class="form-control" placeholder="type here"
+            (input)="OnChangeInput($any($event.target).value)">
+        <span class="input-group-text" (click)="OnSubmit($event)"><i
+                class="bi bi-search"></i></span>
+    </div>
 </form>
